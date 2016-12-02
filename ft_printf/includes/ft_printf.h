@@ -25,8 +25,6 @@
 # define PUTCHAR(a)		ft_printf("%c\n",a)
 # define PUTDB(a)		ft_printf("{c:1:%f}\n", a)
 # define PUTBIN(a)		ft_printf("{d:1:%b}\n", a)
-# define PUTTIME(a)		ft_printf("{g:1:%hk}\n", a)
-# define PUTDATE(a)		ft_printf("{b:1:%lk}\n", a)
 # define PUTPTR(a)		ft_printf("{p:1:%p}\n", a)
 
 int		ft_printf(char *str, ...);

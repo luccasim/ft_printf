@@ -1,0 +1,20 @@
+Generale:
+- ft_printf passe le 42FileChecker.
+- Utilisation d'une structure pour gérés les flags.
+- Utilisation d'un buffer temporaire pour stocker les caractere convertit.
+- Les doubles sont chiant a faire...
+- Les wild caractere sont chiant a faire...
+
+Bonus:
+- Affichage des nombre binaire conversion b.
+- Affichage de la conversion n.
+- Affichage des float, avec calcul de mantisse <_< conversion f et F.
+- Possibilite de changer la police/coleur d'affichage avec '{' '}' voir la Demo!
+- implementation de f_printf pour ecrire sur un fd ( le f_print ecris dans un *FILE qui est interdit par la norme).
+- Tableau de pointeur pour les conversions!
+- Plein de MACRO pour une utilisation dans les projet simple!.
+- Pas d'utilisation de malloc (ft_printf portable !).
+
+Autres:
+- (affichage d'une conversion de temps retirer car utilisation de strdate)
+- Ce projet me carry tous les projet C, à faire absolumenent ! Mais pas à refaire ...

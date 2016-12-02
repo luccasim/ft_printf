@@ -2,7 +2,7 @@ NAME 	=	libftprintf.a
 DOBJ 	=	objs
 DSRC 	=	srcs
 INC 	=	-I includes/
-CC 	=	llvm-gcc
+CC 		=	llvm-gcc
 CFLAGS 	=	$(INC)# -Wall -Werror -Wextra $(INC)
 SRC 	=	$(shell find $(DSRC) -name '*.c' -type f)
 SDIR	=	$(shell find $(DSRC) -type d)
@@ -19,6 +19,9 @@ $(NAME): $(OBJ)
 $(DOBJ)/%.o:%.c
 	@mkdir -p $(ODIR)
 	$(CC) $(CFLAGS) -c $< -o $@
+
+test: $(NAME)
+	$(CC) $(CFLAGS) demo.c $(INC) -L . -lftprintf
 
 clean:
 	@/bin/rm -rf $(DOBJ)
